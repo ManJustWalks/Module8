@@ -1,0 +1,66 @@
+.main__card {
+  width: 220px;
+  height: 340px;
+  background-color: #11151a;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.main__card_frame_image{
+  border-radius: 20px 20px 0px 0px;
+  background-color: #363c44;
+  height: 220px;
+}
+
+.main__card_1_all_text{
+  /* border: 1px solid #59a3fd; */
+  height: 100px;
+  margin: 8px 10px 10px 10px;
+  font-family: 'Unbounded';
+}
+
+.main__icons_games{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.main__card_1_title{
+  /* border: 1px solid #59a3fd; */
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  
+}
+.main__card .image {
+  /* border: 1px solid #59a3fd; */
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+} 
+.main__card .text-wrapper {
+  /* border: 1px solid #59a3fd; */
+  width: 100%;
+  height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.main__card_title {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.main__card_icons_all_star{
+  width: 100px;
+  height: 20px;
+  gap: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.main__icons_mini_star{
+  width: 10px;
+  height: 10px;
+}

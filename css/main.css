@@ -1,0 +1,126 @@
+main{
+  background-color: #171D25;
+  position: relative;
+
+}
+
+/* Все блоки */
+.main__all_element{
+
+  height: max-content;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+/* Раздел лучшее за неделю */
+.main__best_weeked{
+  position: absolute;
+  top: 10%;
+  height: auto;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__icons_star{
+  width: 30px;
+  height: 30px;
+}
+
+.main__string{ /* Надпись лучшее за недею */
+  margin: 30px;
+  gap: 20px;
+  font-family: 'Unbounded';
+  font-size: 24px;
+  color: rgb(187, 187, 187);
+  display: flex;
+  align-items: center;
+}
+
+.main__all_card{ /* Стиль распределения карточек */
+  /* gap: 30px; */
+  width: auto;
+  align-items: center;
+  justify-content: center;
+
+  display: grid;
+  /* grid-template-columns: repeat (auto-fill, 300px); */
+  grid-template-columns: 20% 20% 20% 20% 20% 20%;
+  /* Будет создано 3 ряда */
+  /* grid-template-rows: 250px 10vw 15rem; */
+  /* border: 1px solid #00ff00; */
+}
+
+/* ЧАВО ответы */
+.main__questions{
+  margin: 50px;
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  color: azure;
+}
+
+.main__q_block{
+  margin: 15px;
+  /* padding: 5px; */
+  padding-left: 20px;
+  height: auto;
+  width: 100%;
+
+  border-radius: 10px;
+  border-style: none;
+  background-color: #12161B;
+
+  font-family: 'Unbounded';
+  font-size: 17px;
+  color: rgb(187, 187, 187);
+
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+}
+
+.main__q_text{
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: left; 
+  text-align:justify;
+}
+
+.main__icons_arrow_fill img{
+  width: 24px;
+  height: 24px;
+}
+
+.main__icons_arrow_fill{
+  padding: 20px; 
+}
+
+.main__q_block:hover{
+  color: azure;
+  background-color: #14171d;
+  cursor: pointer;
+}
+
+/* Сетка фон */
+.main__grid_phone {
+  --radius: 1.1px;
+  --size: 14px;
+  --test: #4d525a;
+  color: var(--test);
+  height: 2000px;
+
+  background-image:
+    linear-gradient(90deg,rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.4) 100%), /* прозрачный градиент */
+    radial-gradient(circle at center, var(--test) 0, var(--test) var(--radius), transparent calc(var(--radius) + 0.785px)); /* паттерн */
+
+  background-size: 100% 100%, var(--size) var(--size);
+  justify-content: center; 
+
+} 

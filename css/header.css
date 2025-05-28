@@ -1,0 +1,185 @@
+/* Основной хедер */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: #11151a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(16px, 5vw, 100px);
+  z-index: 1000;
+}
+
+/* Левая и правая группы */
+.header__left,
+.header__right {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.header__left {
+  gap: 10px;
+}
+
+.header__right {
+  gap: 30px;
+}
+
+/* Иконки */
+.header__left img{
+  width: 25px;
+  height: 25px;
+}
+.header__right img {
+  width: 18px;
+  height: 18px;
+}
+
+.header__icon_block {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.header__icon_block:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.header__icon_block:hover .header__icon_search {
+  transform: scale(1.2);
+}
+
+.header__icon_block:hover .header__icon_tools {
+  transform: rotate(90deg);
+}
+
+/* Анимации */
+.header__icon_search,
+.header__icon_tools {
+  transition: transform 0.3s ease;
+}
+
+/* Заголовок */
+.header__title {
+  color: #fff;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* Разделительная линия */
+.header__separator {
+  width: 2px;
+  height: 24px;
+  background-color: #444;
+}
+
+/* Бургер-меню */
+.header__burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.header__burger img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .header__right {
+    display: none;
+  }
+
+  .header__burger {
+    display: block;
+  }
+}
+
+.user-panel {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.user-panel.hidden {
+  display: none;
+}
+
+.user-panel__content {
+  width: 280px;
+  background-color: #1e242b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-panel__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.user-panel__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.user-panel__close img {
+  width: 18px;
+  height: 18px;
+}
+
+.user-panel__description {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.user-panel__login-button {
+  background-color: #28cb1f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.user-panel__login-button:hover {
+  background-color: #23b51c;
+}
+
+.user-panel__login-button img {
+  width: 20px;
+  height: 20px;
+}

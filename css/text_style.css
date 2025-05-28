@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Trebuchet MS'; /* Русский шрифт */
+  src: url('../fonts/Trebuchet/Trebuchet MS.ttf');
+}
+@font-face {
+  font-family: 'TiltWarp'; /* Англиский шрифт */
+  src: url('../fonts/TiltWarp/TiltWarp.ttf'); 
+}
+@font-face {
+  font-family: 'Unbounded'; /* Растянутый шрифт */
+  src: url('../fonts/Unbounded/Unbounded-Regular.ttf');
+}

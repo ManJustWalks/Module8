@@ -1,0 +1,88 @@
+
+main{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.section__picture{
+  width: 100%;
+}
+
+.auth__frame{
+  width: 100%;
+  position: absolute;
+  padding: 30px;
+  height: max-content;
+  top:10%;
+
+  display: grid;
+  justify-content: center;
+
+}
+
+.auth-panel__title{
+  padding-bottom: 40px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.auth-panel__content {
+  height: max-content;
+  width: 600px;
+  background-color: #11151a;
+  border: 1px solid #313131;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-panel__description { /* Надписи */
+  color: #9fadd6;
+  font-weight: 500;
+
+}
+
+.auth-panel__login-button { /* Кнопка */
+  width: 40%;
+  margin-top: 20px;
+  background-color: #456EEE;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 15px;
+  
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+
+}
+
+.auth-panel__login-button:hover {
+  background-color: #5d83f8;
+}
+
+.auth__input{ /* Поле ввода */
+  outline: none;
+  padding: 15px;
+  font-size: 20px;
+  height: 40px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  border: none;
+  background-color: #1a1f25;
+  border-radius: 3px;
+  border: #456EEE;
+}

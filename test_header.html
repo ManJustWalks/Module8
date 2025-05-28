@@ -1,0 +1,73 @@
+<!-- Header -->
+<header class="flex items-center justify-between px-6 py-4 bg-zinc-900 text-white shadow-md">
+  <div class="flex items-center gap-6">
+    <span class="text-lg font-bold flex items-center gap-2">
+      ☁ <span>Steam Workshops</span>
+    </span>
+    <nav class="hidden md:flex gap-4">
+      <button class="hover:underline">Контент ▾</button>
+      <button class="hover:underline">Обсуждения ▾</button>
+      <button class="hover:underline">О нас ▾</button>
+    </nav>
+  </div>
+  <div class="flex items-center gap-4">
+    <input type="text" placeholder="Поиск..." class="bg-zinc-800 px-4 py-1.5 rounded border border-zinc-700 focus:outline-none focus:ring focus:ring-blue-600" />
+    <select class="bg-zinc-800 text-white border border-zinc-700 rounded px-2 py-1">
+      <option>Русский</option>
+      <option>English</option>
+    </select>
+    <button class="text-xl hover:text-blue-400">🛎</button>
+    <button onclick="toggleSettings()" class="text-xl hover:text-blue-400">⚙️</button>
+    <button class="text-xl hover:text-blue-400">👤</button>
+  </div>
+</header>
+
+<!-- Настройки (появляется справа) -->
+<div id="settingsPanel" class="fixed top-0 right-0 h-full w-80 bg-zinc-800 text-white p-6 shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+  <h2 class="text-xl font-bold mb-4">Настройки интерфейса</h2>
+
+  <div class="mb-4">
+    <p class="mb-1">🎨 Тема:</p>
+    <div class="flex gap-3">
+      <label><input type="radio" name="theme" checked> Тёмная</label>
+      <label><input type="radio" name="theme"> Светлая</label>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <p class="mb-1">🔠 Размер текста:</p>
+    <div class="flex gap-3">
+      <label><input type="radio" name="font"> Стандарт</label>
+      <label><input type="radio" name="font"> Крупный</label>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <p class="mb-1">🖌 Цветовая тема:</p>
+    <div class="flex flex-col gap-2">
+      <label><input type="radio" name="color" checked> Steam</label>
+      <label><input type="radio" name="color"> Холодная</label>
+      <label><input type="radio" name="color"> Неон</label>
+    </div>
+  </div>
+
+  <div class="mb-6">
+    <p class="mb-1">🧱 Ширина:</p>
+    <div class="flex gap-3">
+      <label><input type="radio" name="width" checked> Авто</label>
+      <label><input type="radio" name="width"> Широкая</label>
+    </div>
+  </div>
+
+  <div class="flex justify-between">
+    <button class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Применить</button>
+    <button class="text-zinc-400 hover:underline">Сброс</button>
+  </div>
+</div>
+
+<script>
+function toggleSettings() {
+  const panel = document.getElementById('settingsPanel');
+  panel.classList.toggle('translate-x-full');
+}
+</script>

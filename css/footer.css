@@ -1,0 +1,98 @@
+footer {
+  width: 100%;
+  background-color: #12161b;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: "Unbounded-Regular", Helvetica, sans-serif;
+  border-top: 1px solid #1d1f23;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.valve-steam-workshop {
+  color: #888;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 0 10px;
+  max-width: 900px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-divider {
+  height: 1px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #333;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-icons img {
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.footer-icons a:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-divider {
+    max-width: 200px;
+  }
+}
